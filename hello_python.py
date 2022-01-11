@@ -19,3 +19,6 @@
 
 # print(string)
 
+x = [5,34,646,34,3]
+x += [2]
+print(x)
