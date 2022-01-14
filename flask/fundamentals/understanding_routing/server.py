@@ -11,6 +11,22 @@ def dojo():
     return "Dojo"
 
 
+@app.route('/michael')
+def michael():
+    return "Michael"
+
+
+@app.route('/say/<name>')
+def say_hi(name):
+    return f"Hello {name}"
+
+@app.route('/repeat/<int:number>/<phrase>')
+def repeat(number, phrase):
+    return render_template('index.html', name=phrase, number=number)
+    
+
+
+
 # @app.route('/<name>')
 # def index(name):
 #     return render_template('index.html', name = name)
