@@ -11,41 +11,47 @@
 <body>
     <div class="container">
 
-        <h1>Survey</h1>
+        <h1 class="display-2">Survey</h1>
         <form action="/process" method="post">
-            <div class="form-group row">
-                <label for='name' class="col-sm-2 col-form-label">Name:</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Name</span>
                     <div class="form-control">
                         <input class="form-control" type='text' name='name'>
                     </div>
             </div>
                 
-            <div class="form">
-                <label for='location' class="col-sm-2 col-form-label">Location:</label>
-                    <select name="location" class="form-control">
-                        <option value="Burbank">Burbank</option>
-                        <option value="San Jose">San Jose</option>
-                        <option value="Chicago">Chicago</option>
-                        <option value="Arlington">Arlington</option>
-                        <option value="New York">New York</option>
-                    </select>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Location</span>
+                    <div class="form-control">
+                        <select name="location" class="form-control">
+                            <option value="Burbank">Burbank</option>
+                            <option value="San Jose">San Jose</option>
+                            <option value="Chicago">Chicago</option>
+                            <option value="Arlington">Arlington</option>
+                            <option value="New York">New York</option>
+                        </select>
+                    </div>
             </div>
                 
-            <div class="form-group row">
-                <label for='language' class="col-sm-2 col-form-label">Language:</label>
-                <select name="language" class="form-select">
-                    <option value="python">python</option>
-                    <option value="java">java</option>
-                    <option value="c++">c++</option>
-                    <option value="javascript">javascript</option>
-                    <option value="html/css">html/css</option>
-                </select>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Language</span>
+                    <div class="form-control">
+                        <select name="language" class="form-control">
+                            <option value="python">python</option>
+                            <option value="java">java</option>
+                            <option value="c++">c++</option>
+                            <option value="javascript">javascript</option>
+                            <option value="html/css">html/css</option>
+                        </select>
+                    </div>
             </div>
 
-            <div class="form-group row">
-                <label for='comment'">Comment (optional):</label>
-                <input type='text' name='comment'>
-                <input type='submit' value='submit' class="btn btn-primary">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Comment</span>
+                    <div class="form-control">
+                        <input type='text' class="form-control" name='comment'>
+                    </div>
+                    <input type='submit' value='submit' class="btn btn-primary">
             </div>
 
         </form> 
