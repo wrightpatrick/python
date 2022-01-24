@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Default</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>Default HTML Page!</h1>
+        <h1>All My Friends</h1>
+            {% for one_friend in all_friends %}
+                <p>First Name: {{friends.first_name}}</p>
+                <p>Last Name: {{friends.last_name}}</p>
+                <p>Occupation: {{friends.occupation}}</p>
+            {% endfor %}
+            <h1>Add a Friend</h1>
+            <form action="/create_friend" method="POST">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="fname">
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="lname">
+                <label for="occupation" >Occupation:</label>
+                <input type="text" name="occ">
+                <input type="submit" value="Add_Friend">
+            </form>
+            
+
+    </div>
+</body>
+</html>
